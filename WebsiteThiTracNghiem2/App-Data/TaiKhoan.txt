@@ -6,3 +6,4 @@ phạm thành đạt|dat|123456|dat@gamil.com|2410A07|Hà Nội|thích lọ|1500
 hoa|hoa|123456|hoa@gmail.com|2410A07|Hà Nội|đá bóng|111|1112a|True|User
 no|no|123456|no@gmail.com|2410A07|Hồ Chí Minh|đá bóng|1123|1112a|True|User
 nn|nn|123456|nn@gmail.com|2410A07|Hà Nội|đá bóng|1125|1273A@|True|User
+Thúy Kiều|ThuyKieu@1|123456|ThuyKieu@gmail.com|2410A07|Hồ Chí Minh|Lầu ngưng bích|10000|24AA11|True|User

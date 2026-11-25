@@ -95,10 +95,14 @@ namespace WebsiteThiTracNghiem2
 
             File.WriteAllLines(DuongDanFile, cacDong);
         }
-
+        /* đã sủa */
         private void NapDanhSach()
         {
-            gvDeThi.DataSource = DocDanhSach();
+            List<DeThi> ds = DocDanhSach();
+
+            CapNhatApplication(ds);
+
+            gvDeThi.DataSource = ds;
             gvDeThi.DataBind();
         }
 
@@ -177,7 +181,11 @@ namespace WebsiteThiTracNghiem2
             });
 
             GhiDanhSach(ds);
+            CapNhatApplication(ds);/* Mới sửa*/
+
             lblThongBao.Text = "Thêm đề thi thành công.";
+
+
             XoaTrang();
             NapDanhSach();
         }
@@ -206,7 +214,11 @@ namespace WebsiteThiTracNghiem2
             deThi.SoCau = soCau;
 
             GhiDanhSach(ds);
+            CapNhatApplication(ds);/* Mới sửa*/
+
             lblThongBao.Text = "Cập nhật đề thi thành công.";
+
+
             XoaTrang();
             NapDanhSach();
         }
@@ -264,11 +276,35 @@ namespace WebsiteThiTracNghiem2
 
                 ds.RemoveAll(d => d.MaDe == maDe);
                 GhiDanhSach(ds);
+                CapNhatApplication(ds);/* Mới sửa*/
 
                 lblThongBao.Text = "Xóa đề thi thành công.";
+
                 XoaTrang();
                 NapDanhSach();
             }
         }
+
+
+
+
+
+        /* đã sủa  cả NapDanhSach ở trên*/
+        private void CapNhatApplication(List<DeThi> danhSach)
+        {
+            Application.Lock();
+
+            try
+            {
+                Application["DanhSachDeThi"] = new List<DeThi>(danhSach);
+            }
+            finally
+            {
+                Application.UnLock();
+            }
+        }
+
+
+
     }
 }

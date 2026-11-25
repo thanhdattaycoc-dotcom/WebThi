@@ -138,7 +138,7 @@ TextMode="Number"
                 <asp:Button ID="btnDangKy" runat="server"
                     Text="ĐĂNG KÝ TÀI KHOẢN"
                     CssClass="btn-dangky"
-                  
+                      OnClick="btnDangKy_Click"
 
                     
 
