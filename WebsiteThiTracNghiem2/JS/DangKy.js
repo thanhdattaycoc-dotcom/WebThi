@@ -115,24 +115,26 @@
     /* Mới làm*/
 
 
-    function kiemTraTenDangNhap() {
+function kiemTraTenDangNhap() {
+    var tenDangNhap = document.getElementById("txtTenDangNhap").value.trim();
 
-        var tenDangNhap = document.getElementById("txtTenDangNhap").value.trim();
+    // Đủ 12 ký tự, có ít nhất: 1 chữ thường, 1 chữ hoa, 1 số và 1 ký tự @
+    var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*@).{12}$/;
 
-        // Đúng 10 ký tự và có chứa ký tự @
-        var regex = /^(?=.*@).{10}$/;
-
-        if (!regex.test(tenDangNhap)) {
-            alert("Tên đăng nhập phải đúng 10 ký tự và chứa ký tự @!");
-            return false;
-        }
-
-        return true;
+    if (!regex.test(tenDangNhap)) {
+        alert("Tên đăng nhập phải đủ 12 ký tự, gồm ít nhất 1 chữ thường, 1 chữ hoa, 1 chữ số và 1 ký tự @!");
+        return false;
     }
 
+    return true;
+}
 
-    //^ Bắt đầu chuỗi
-    //    (?=.* @)	Chuỗi phải chứa ký tự @
-    //.Đại diện cho một ký tự bất kỳ
-    //{ 10 }	Đúng 10 ký tự
-    //$	Kết thúc chuỗi
+
+// • ^ : Bắt đầu chuỗi.
+// • (?=.* [a - z]) : Phải chứa ít nhất 1 ký tự chữ thường(a đến z).
+// • (?=.* [A - Z]) : Phải chứa ít nhất 1 ký tự chữ hoa(A đến Z).
+// • (?=.*\d) : Phải chứa ít nhất 1 chữ số(0 đến 9).
+// • (?=.* @) : Phải chứa ít nhất 1 ký tự @.
+// • .{ 12 } : Tổng độ dài phải đúng bằng 12 ký tự(Lưu ý: Nếu đề bài yêu cầu từ 12 ký tự trở lên, bạn chỉ cần sửa { 12} thành { 12, }).
+// • $: Kết thúc chuỗi.
+
