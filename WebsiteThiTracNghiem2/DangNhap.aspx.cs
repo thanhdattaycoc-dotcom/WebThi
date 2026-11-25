@@ -85,7 +85,7 @@ namespace WebsiteThiTracNghiem2
 
                     string tenCu = cot[1];
                     string matKhauCu = cot[2];
-                    string quyen = cot[10];
+                    string quyen = cot[8];
 
                     // 6. Kiem tra ten dang nhap va mat khau
                     if (string.Equals(
