@@ -1,0 +1,179 @@
+﻿
+<%@ Master Language="C#" AutoEventWireup="true"
+    CodeBehind="Site.Master.cs"
+    Inherits="WebsiteThiTracNghiem.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="vi">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent"
+            runat="server">
+            Website Thi Trắc Nghiệm
+        </asp:ContentPlaceHolder>
+    </title>
+
+    <link href="~/css/Site.css" rel="stylesheet" runat="server" />
+
+    <asp:ContentPlaceHolder ID="HeadContent"
+        runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+
+        <!-- HEADER -->
+        <header class="site-header">
+            <div class="header-container">
+
+                <a href="TrangChu.aspx" class="logo">
+                    <span class="logo-icon">Q</span>
+                    <span class="logo-text">
+                        <strong>QUIZ ONLINE</strong>
+                        <small>WEBSITE THI TRẮC NGHIỆM</small>
+                    </span>
+                </a>
+
+                <div class="header-account">
+
+                    <asp:PlaceHolder ID="phKhach"
+                        runat="server">
+
+                        <a href="DangNhap.aspx"
+                           class="btn-login">
+                            Đăng nhập
+                        </a>
+
+                        <a href="DangKy.aspx"
+                           class="btn-register">
+                            Đăng ký
+                        </a>
+
+                    </asp:PlaceHolder>
+
+                    <asp:PlaceHolder ID="phNguoiDung"
+                        runat="server" Visible="false">
+
+                        <span class="welcome-text">
+                            Xin chào,
+                            <asp:Label ID="lblTenNguoiDung"
+                                runat="server" />
+                        </span>
+
+                        <asp:LinkButton ID="btnDangXuat"
+                            runat="server"
+                            CssClass="btn-logout"
+                            OnClick="btnDangXuat_Click"
+                            OnClientClick="return confirm('Bạn có chắc chắn muốn đăng xuất?');">
+                            Đăng xuất
+                        </asp:LinkButton>
+
+                    </asp:PlaceHolder>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- NAVIGATION -->
+        <nav class="main-navigation">
+            <div class="nav-container">
+
+                <a href="TrangChu.aspx" class="nav-link">
+                    Trang chủ
+                </a>
+
+                <a href="DanhSachDeThi.aspx" class="nav-link">
+                    Danh sách đề thi
+                </a>
+
+                <asp:PlaceHolder ID="phMenuUser"
+                    runat="server" Visible="false">
+
+                    <a href="TaiKhoan.aspx" class="nav-link">
+                        Thông tin cá nhân
+                    </a>
+
+                    <a href="LichSuThi.aspx" class="nav-link">
+                        Lịch sử thi
+                    </a>
+
+                </asp:PlaceHolder>
+
+                <asp:PlaceHolder ID="phMenuAdmin"
+                    runat="server" Visible="false">
+
+                    <div class="admin-menu">
+                        <span class="nav-link admin-title">
+                            Quản trị ▼
+                        </span>
+
+                        <div class="admin-dropdown">
+                            <a href="QuanLyDeThi.aspx">
+                                Quản lý đề thi
+                            </a>
+
+                            <a href="QuanLyCauHoi.aspx">
+                                Quản lý câu hỏi
+                            </a>
+
+                            <a href="QuanLyTaiKhoan.aspx">
+                                Quản lý tài khoản
+                            </a>
+                        </div>
+                    </div>
+
+                </asp:PlaceHolder>
+
+            </div>
+        </nav>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-container">
+
+            <asp:ContentPlaceHolder ID="MainContent"
+                runat="server">
+            </asp:ContentPlaceHolder>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+
+            <div class="footer-container">
+
+                <div class="footer-column">
+                    <h3>QUIZ ONLINE</h3>
+                    <p>
+                        Website thi trắc nghiệm trực tuyến,
+                        hỗ trợ học tập và kiểm tra kiến thức.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Liên kết</h3>
+                    <a href="TrangChu.aspx">Trang chủ</a>
+                    <a href="DanhSachDeThi.aspx">Danh sách đề thi</a>
+                    <a href="DangNhap.aspx">Đăng nhập</a>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Thông tin</h3>
+                    <p>Website Thi Trắc Nghiệm</p>
+                    <p>Phục vụ mục đích học tập</p>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 QUIZ ONLINE - Website Thi Trắc Nghiệm
+            </div>
+
+        </footer>
+
+    </form>
+</body>
+</html>

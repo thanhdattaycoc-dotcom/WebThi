@@ -1,0 +1,8 @@
+Nguyen Van A|admin|123456|admin@gmail.com|CNTT|Hung Yen|ca hát|true|Admin
+Bùi Văn Đông|Đông Bùi|123456|dongbui@gamil.com|2410A07|Hà Nội|chơi game|True|User
+bùi văn minh|minh|123456|minh@gmail.com|2410A07|Hà Nội|chơi game|500000|True|User
+anh|anh|123456|anh@gmail.com|2410A07|Hà Nội|đá bóng|111|cn@d12383|True|User
+phạm thành đạt|dat|123456|dat@gamil.com|2410A07|Hà Nội|thích lọ|150000|dgddggh|True|User
+hoa|hoa|123456|hoa@gmail.com|2410A07|Hà Nội|đá bóng|111|1112a|True|User
+no|no|123456|no@gmail.com|2410A07|Hồ Chí Minh|đá bóng|1123|1112a|True|User
+nn|nn|123456|nn@gmail.com|2410A07|Hà Nội|đá bóng|1125|1273A@|True|User

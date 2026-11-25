@@ -1,0 +1,10 @@
+﻿CH001|DT001|CPU là viết tắt của cụm từ nào?|Central Processing Unit|Computer Personal Unit|Central Program Utility|Control Processing User|A
+CH002|DT001|Thiết bị nào là thiết bị nhập?|Bàn phím|Màn hình|Máy in|Loa|A
+CH003|DT001|RAM là loại bộ nhớ nào?|Bộ nhớ truy cập ngẫu nhiên|Bộ nhớ chỉ đọc|Ổ cứng|Bộ nhớ ngoài|A
+CH004|DT001|HTML là viết tắt của cụm từ nào?|HyperText Markup Language|HighText Machine Language|Hyper Transfer Main Link|Home Tool Markup Language|A
+CH005|DT001|Thiết bị nào là thiết bị xuất?|Màn hình|Bàn phím|Chuột|Máy quét|A
+CH006|DT001|Phần mềm nào sau đây là hệ điều hành?|Windows|Microsoft Word|Google Chrome|Photoshop|A
+CH007|DT001|Đơn vị nhỏ nhất biểu diễn thông tin là gì?|Bit|Byte|KB|MB|A
+CH008|DT001|Thiết bị nào dùng để lưu trữ dữ liệu?|Ổ cứng|Bàn phím|Chuột|Màn hình|A
+CH009|DT001|Phần mở rộng phổ biến của tệp văn bản là gì?|.txt|.jpg|.mp3|.exe|A
+CH010|DT001|Mạng Internet là gì?|Mạng máy tính toàn cầu|Một phần mềm|Một hệ điều hành|Một thiết bị máy tính|A

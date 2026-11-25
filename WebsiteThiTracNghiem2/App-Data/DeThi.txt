@@ -1,0 +1,12 @@
+﻿
+MaDe|TenDe|MonHoc|ThoiGian|SoCau
+DT001|Kiểm tra giữa kỳ|Tin học|30|20
+DT002|Ôn tập chương 1|Toán học|45|30
+DT003|Kiểm tra cuối kỳ|Tiếng Anh|60|40
+DT004|Kiến thức cơ bản|Cơ sở dữ liệu|30|20
+DT005|Ôn tập tổng hợp|Lập trình C#|45|30
+DT006|Kiểm tra HTML và CSS|Thiết kế Web|30|20
+DT007|Kiểm tra JavaScript cơ bản|Lập trình Web|30|20
+DT008|Kiểm tra hệ điều hành|Hệ điều hành|45|30
+DT009|Ôn tập mạng máy tính|Mạng máy tính|45|30
+DT010|Kiểm tra an toàn thông tin|An toàn thông tin|60|40

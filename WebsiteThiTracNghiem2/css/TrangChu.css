@@ -1,0 +1,305 @@
+﻿
+/* Tổng thể */
+.trang-chu {
+    width: 100%;
+    color: #243047;
+}
+
+/* Banner */
+.banner {
+    min-height: 390px;
+    padding: 55px 65px;
+    border-radius: 18px;
+    background: linear-gradient(120deg, #172554, #2563eb);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    overflow: hidden;
+}
+
+.banner-content {
+    max-width: 620px;
+}
+
+.banner-label {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.15);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.banner h1 {
+    font-size: 38px;
+    line-height: 1.35;
+    margin: 22px 0 15px;
+}
+
+    .banner h1 span {
+        color: #93c5fd;
+    }
+
+.banner p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #e0e7ff;
+    max-width: 550px;
+}
+
+.loi-chao {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #bfdbfe;
+}
+
+.banner-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #ffffff;
+    color: #1d4ed8;
+}
+
+    .btn-primary:hover {
+        background: #dbeafe;
+        color: #1e40af;
+    }
+
+.btn-secondary {
+    border: 1px solid white;
+    color: white;
+}
+
+    .btn-secondary:hover {
+        background: rgba(255,255,255,0.15);
+    }
+
+/* Hình minh họa */
+.banner-icon {
+    position: relative;
+    width: 230px;
+    height: 230px;
+    margin: 0 50px;
+}
+
+.icon-circle {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90px;
+}
+
+.icon-small {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: white;
+    color: #2563eb;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.icon-one {
+    top: 0;
+    right: 0;
+}
+
+.icon-two {
+    bottom: 0;
+    left: 0;
+}
+
+.icon-three {
+    bottom: 15px;
+    right: 0;
+}
+
+/* Tiêu đề section */
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+    .section-heading span {
+        color: #2563eb;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+        margin: 12px 0;
+        color: #172554;
+    }
+
+    .section-heading p {
+        color: #64748b;
+    }
+
+/* Chức năng */
+.section-chuc-nang {
+    padding: 65px 0;
+}
+
+.chuc-nang-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.chuc-nang-card {
+    padding: 30px 25px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+    .chuc-nang-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+.card-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.chuc-nang-card h3 {
+    color: #1e3a8a;
+    font-size: 19px;
+}
+
+.chuc-nang-card p {
+    color: #64748b;
+    line-height: 1.7;
+    min-height: 55px;
+}
+
+.chuc-nang-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hướng dẫn */
+.huong-dan {
+    padding: 45px 25px;
+    background: #f1f5f9;
+    border-radius: 16px;
+}
+
+.buoc-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.buoc-item {
+    text-align: center;
+    padding: 25px;
+}
+
+.buoc-so {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: #dbeafe;
+    color: #1d4ed8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.buoc-item h3 {
+    color: #1e3a8a;
+}
+
+.buoc-item p {
+    color: #64748b;
+    line-height: 1.7;
+}
+
+/* Lời mời */
+.loi-moi {
+    margin: 55px 0 20px;
+    padding: 45px 20px;
+    border-radius: 16px;
+    background: #eff6ff;
+    text-align: center;
+}
+
+    .loi-moi h2 {
+        color: #1e3a8a;
+        font-size: 26px;
+    }
+
+    .loi-moi p {
+        color: #64748b;
+        margin-bottom: 25px;
+    }
+
+    .loi-moi .btn-primary {
+        background: #2563eb;
+        color: white;
+    }
+
+        .loi-moi .btn-primary:hover {
+            background: #1d4ed8;
+        }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .banner {
+        padding: 35px 25px;
+    }
+
+        .banner h1 {
+            font-size: 28px;
+        }
+
+    .banner-icon {
+        display: none;
+    }
+
+    .chuc-nang-grid,
+    .buoc-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-chuc-nang {
+        padding: 40px 0;
+    }
+}

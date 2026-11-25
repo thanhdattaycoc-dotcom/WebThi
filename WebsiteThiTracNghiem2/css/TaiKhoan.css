@@ -1,0 +1,157 @@
+﻿
+.tai-khoan-container {
+    max-width: 950px;
+    margin: 35px auto;
+    padding: 20px;
+    color: #243047;
+}
+
+.tai-khoan-header {
+    margin-bottom: 25px;
+}
+
+    .tai-khoan-header h2 {
+        color: #1e3a8a;
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+    .tai-khoan-header p {
+        color: #64748b;
+    }
+
+.tai-khoan-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.tai-khoan-avatar {
+    padding: 30px;
+    text-align: center;
+    background: #eff6ff;
+}
+
+    .tai-khoan-avatar span {
+        display: inline-flex;
+        width: 85px;
+        height: 85px;
+        justify-content: center;
+        align-items: center;
+        background: #dbeafe;
+        border-radius: 50%;
+        font-size: 42px;
+    }
+
+    .tai-khoan-avatar h3 {
+        color: #1e3a8a;
+        margin: 12px 0 5px;
+    }
+
+.ten-dang-nhap {
+    color: #64748b;
+}
+
+.tai-khoan-form {
+    max-width: 650px;
+    margin: auto;
+    padding: 35px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #334155;
+    }
+
+.form-control {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    font-family: inherit;
+}
+
+    .form-control:focus {
+        border-color: #2563eb;
+        box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+    }
+
+    .form-control[readonly] {
+        background: #f1f5f9;
+        cursor: not-allowed;
+    }
+
+.thong-bao {
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.thong-bao-thanh-cong {
+    color: #15803d;
+}
+
+.thong-bao-loi {
+    color: #dc2626;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.btn-cap-nhat,
+.btn-quay-lai {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-cap-nhat {
+    background: #2563eb;
+    color: white;
+}
+
+    .btn-cap-nhat:hover {
+        background: #1d4ed8;
+    }
+
+.btn-quay-lai {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+    .btn-quay-lai:hover {
+        background: #cbd5e1;
+    }
+
+@media (max-width: 600px) {
+    .tai-khoan-container {
+        padding: 10px;
+    }
+
+    .tai-khoan-form {
+        padding: 20px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+}
